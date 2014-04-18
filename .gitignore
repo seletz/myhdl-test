@@ -1,0 +1,5 @@
+*.vcd
+*.vcd.*
+.ipython
+*.v
+*.vhd
