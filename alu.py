@@ -44,7 +44,7 @@ def ALU(q, o, z, n, a, b, f, clk, width=16):
         if f == t_ALU_FUNCTION.ZERO:
             result.next = 0
         elif f == t_ALU_FUNCTION.ONES:
-            result.next = width - 1
+            result.next = 2 ** width - 1
         elif f == t_ALU_FUNCTION.NEG_A:
             result.next = -a % 2 ** width
         elif f == t_ALU_FUNCTION.NEG_B:
